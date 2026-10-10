@@ -1,0 +1,14 @@
+{
+ "title": "Ludo by the Numbers",
+ "short": "Ludo by the Numbers",
+ "description": "What simulated Ludo games say about luck, captures, game length and seat order, with the method shown. Notes by Ahmed Moaz.",
+ "canonical_base": "https://ludo-numbers.statichost.page/",
+ "base": "/",
+ "blurb": "Ludo looks like pure luck, but a few questions about it have real answers: how often a game ends with no capture, how long a game runs at two, three or four seats, and whether the obvious move is the right one. These notes work them out from simulated games and say plainly what the numbers do not show.",
+ "footer": "Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.",
+ "about": [
+  "I am Ahmed Moaz. I build Boardit, a small site of free browser games that includes Ludo, so I spend a lot of time with the rules engine and with simulated games.",
+  "This blog is where I write up what those simulations show about Ludo: luck and skill, captures, game length and seat order. Every figure says how many games it comes from and what the simulation cannot tell you.",
+  "Corrections are welcome. If a number here looks wrong, the method section of each note says how to check it."
+ ]
+}
