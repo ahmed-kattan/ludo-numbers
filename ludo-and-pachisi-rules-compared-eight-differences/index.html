@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ludo and Pachisi rules compared: eight differences</title>
+<meta name="description" content="Ludo and pachisi share a skeleton: four pieces each, a loop round the board, captures that send a piece back, and a trip to the middle to finish. They diff">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/ludo-and-pachisi-rules-compared-eight-differences/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Ludo and Pachisi rules compared: eight differences</h1>
+<p><small>Ahmed Moaz &middot; 12 October 2026</small></p>
+<p>Ludo and pachisi share a skeleton: four pieces each, a loop round the board, captures that send a piece back, and a trip to the middle to finish. They differ in eight rules that change how a game feels. The biggest is the throw. Pachisi counts cowrie shells and can move a piece twenty-five squares, while Ludo rules use one die and never more than six.</p>
+<h2>What is the difference between Ludo and Pachisi?</h2>
+<p>Pachisi is the older Indian cross-and-circle game, played with six or seven cowrie shells, partners in four-player games and pieces that start in a central square. Ludo is the English one-die game, with each player alone, pieces in corner yards, and a six needed to leave. The table below has the other rules.</p>
+<h2>Eight differences side by side</h2>
+<p>I took the pachisi column from Wikipedia's article on the game, the Ludo column from Wikipedia's article on Ludo, and the last column from the rules and board code of the Ludo table I build.</p>
+<table><thead><tr><th>#</th><th>Rule</th><th>Pachisi (Wikipedia)</th><th>Ludo, Boardit's version</th></tr></thead><tbody><tr><td>1</td><td>Where pieces start</td><td>The central square, which is also where they finish</td><td>A corner base; the centre is only the finish</td></tr><tr><td>2</td><td>What decides the move</td><td>Six cowrie shells counted mouth up, worth 2 to 6, 10 or 25</td><td>One die, 1 to 6</td></tr><tr><td>3</td><td>How a piece enters</td><td>A throw of 6, 10 or 25</td><td>A six, and nothing else</td></tr><tr><td>4</td><td>Who plays with whom</td><td>Two to four players; four usually play as two partnerships</td><td>Two to four players, each for themselves</td></tr><tr><td>5</td><td>What earns another turn</td><td>Throws of 6, 10 or 25, and usually a capture</td><td>A six, a capture, or arriving in the centre</td></tr><tr><td>6</td><td>Safe squares</td><td>Twelve castle squares</td><td>Eight: four start squares and four stars</td></tr><tr><td>7</td><td>The route</td><td>Down the middle of your own arm, round the outside, back up the middle</td><td>Round a shared 52-square track, then a private five-square column</td></tr><tr><td>8</td><td>Where it comes from</td><td>An old Indian game</td><td>Sold in England in 1896 under the name Ludo, Latin for "I play"</td></tr></tbody></table>
+<p>Three notes on the table. First, every pachisi rule and every Ludo date here comes from Wikipedia, so check them against a rulebook before you settle a bet. Second, Wikipedia describes the usual Ludo board as square, with a cross-shaped play area, so the board outline differs less than the starting place does. Third, the 1896 date is the Wikipedia article's, which names the seller as Alfred Coller and does not call Ludo a descendant of pachisi; it lists pachisi among Ludo's cross-and-circle relatives.</p>
+<p>Rows 3 and 5 deserve a second look together. In pachisi, the same throws, 6, 10 and 25, both enter a piece and give another turn, so one lucky throw does two jobs. In this Ludo, the same single number does both jobs too: a six releases a piece and also earns another throw. The difference is how many outcomes can do it: one of six on a die, against three of the seven shell outcomes.</p>
+<h2>What the shells do to the odds</h2>
+<p>The shells are the biggest difference, and they can be measured, with one caution. Suppose each of six shells landed mouth up exactly half the time, like a fair coin. Real shells do not, so treat this as a model.</p>
+<p>Wikipedia's six-shell scoring pays 25 for no shell up, 10 for one, 2 to 5 for two to five, and 6 for all six. With fair coins the number up follows a pattern of 1, 6, 15, 20, 15, 6 and 1 chances in 64:</p>
+<ul><li>A throw that enters a piece or gives another turn is 25, 10 or 6. That is 1 + 6 + 1 = 8 chances in 64, or 12.5%.</li><li>A Ludo six comes up one throw in six, 16.7%.</li><li>Mean throw for the shells: (1 × 25 + 6 × 10 + 15 × 2 + 20 × 3 + 15 × 4 + 6 × 5 + 1 × 6) ÷ 64 = 271 ÷ 64 = 4.23.</li><li>Mean throw for a die: 3.5.</li></ul>
+<p>So under this model the shell game opens less often than Ludo, but each throw moves further.</p>
+<h2>What the two games keep in common</h2>
+<p>Both games give each player four pieces. In both, landing on an opponent sends them back, and both have squares where a piece cannot be taken. Both end in the middle, and both ask for a particular throw to get there. Wikipedia says a pachisi piece can return to the central square only by a direct throw, without defining the term further. In Ludo as I build it, the finish is exact: a piece that would overshoot the centre cannot move.</p>
+<h2>Waiting for one number</h2>
+<p>The two games also make you wait in different places. Ludo makes you wait at the start, for a six. Pachisi lets a piece wait near the end: Wikipedia places four castle squares exactly 25 moves from the central square and says a piece waiting there is safe from capture until a 25 is thrown.</p>
+<p>That is a different kind of tension. In Ludo, a stuck piece is at home in the corner and cannot be harmed. In pachisi, a stuck piece is out on the board, sheltered by its castle square, and waiting for a 25. Both are waits for luck, but only one of them asks you to defend a piece while you wait.</p>
+<h2>Playing the one-die version</h2>
+<p>If the comparison makes you want to try the one-die version, a game can be started free in a browser without an account.</p>
+<p>It seats two to four players, each for themselves, and plays Ludo online with friends by the rules in the right-hand column.</p>
+<p>If you play Ludo with friends at home, try one house rule: let a one release a piece as well as a six. Wikipedia describes a one bringing a token out in the Indian variant, which is often played with two dice. The arithmetic says what changes. A release then comes up on 2 throws in 6, or 33.3%, so the average wait for a piece to come out falls from 6 throws to 3. The chance of still waiting after six throws drops from (5/6)^6, 33.5%, to (4/6)^6, 8.8%. The first lap speeds up a good deal.</p>
+<p><em>Written for Boardit's maker, Ahmed Moaz, with AI help. The game facts were checked against the game's code.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
