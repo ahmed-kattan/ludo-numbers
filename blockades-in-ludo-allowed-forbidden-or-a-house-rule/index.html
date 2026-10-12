@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blockades in Ludo: allowed, forbidden or a house rule?</title>
+<meta name="description" content="Whether a blockade is allowed in Ludo depends on whose Ludo rules you play, because the standard rules leave it open and the variants disagree. Two same-co">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/blockades-in-ludo-allowed-forbidden-or-a-house-rule/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Blockades in Ludo: allowed, forbidden or a house rule?</h1>
+<p><small>Ahmed Moaz &middot; 12 October 2026</small></p>
+<p>Whether a blockade is allowed in Ludo depends on whose Ludo rules you play, because the standard rules leave it open and the variants disagree. Two same-colour pieces on one square are the whole question. Can an opponent capture them, can an opponent pass them, and does a third piece change anything? This piece sorts the versions out, works through what each one does to a single throw, and ends with three questions to settle before anyone touches the die.</p>
+<h2>What is a blockade in Ludo?</h2>
+<p>A blockade is two pieces of one colour on the same square that act as a wall. Opponents cannot capture them, and in some rule sets they cannot move past them either. The name covers a wider family of rules than one, which is why tables argue. In a simpler "pair" rule the two pieces only protect themselves.</p>
+<h2>Four ways a table can treat a pair</h2>
+<p>Wikipedia's Ludo article describes the block in basic play and lists several variants. I have summarised them next to the rule my own game uses.</p>
+<table><thead><tr><th>Version</th><th>What the pair does</th><th>Where it comes from</th></tr></thead><tbody><tr><td>Shelter</td><td>Cannot be captured; opponents may pass it</td><td>The Ludo engine I build</td></tr><tr><td>Wall</td><td>Cannot be captured; passing it needs a six or a one</td><td>A variant Wikipedia lists</td></tr><tr><td>Cut</td><td>A pair is safe, but three pieces can be taken by a single piece</td><td>A variant Wikipedia lists</td></tr><tr><td>Own wall</td><td>A doubled block also holds back its owner's trailing pieces</td><td>Some African rules, per Wikipedia</td></tr></tbody></table>
+<p>In my engine nothing is written to stop one piece moving past another. The move check looks at two things only: a piece in base needs a six, and a piece cannot overshoot the centre. A rival who lands on your pair takes nothing, earns no extra throw and simply shares the square.</p>
+<p>Two details matter. Protection covers any group of two or more pieces of one colour, so a stack of three is safe too. And it is per colour: two different colours sharing a square do not protect each other, and a single landing can send both home.</p>
+<h2>What a pair is worth in one throw</h2>
+<p>Take a worked example, with a fair die and free throws ignored. One of your pieces sits alone on a square. Two rival pieces are behind it, one 2 squares back and one 5 squares back.</p>
+<ul><li>Alone, your piece is taken if the rival throws a 2 or a 5, which is 2 chances in 6, or 33%.</li><li>Joined by a second piece to make a pair, it cannot be taken at all: 0%.</li></ul>
+<p>Now put a rival piece 3 squares behind that pair. Its throws of 4, 5 and 6 would carry it past. A throw of 3 lands on the pair, which rule sets treat differently, so I leave that case aside.</p>
+<ul><li>Under the shelter rule, all three passing throws work, so none is blocked: 0%.</li><li>Under a plain wall, all three are dead throws for that piece: 3 chances in 6, or 50%.</li><li>Under the wall variant where a six or a one breaks through, the 6 works and only 4 and 5 stay dead: 2 in 6, or 33%.</li></ul>
+<p>The same two pieces are worth very different amounts depending on the rule. A wall stalls rivals; a shelter only saves you.</p>
+<h2>Why a wall can lengthen a game</h2>
+<p>Walls hold opponents back for as long as their owner has another piece to move. With four pieces each, a player can build a pair and play on with the other two. The wall then stays until the owner chooses to break it. That is my reasoning, not something measured, and it is the main reason I would expect a wall rule to lengthen a game. A shelter cannot do that, because a rival can always go on.</p>
+<h2>Settle it before the first throw</h2>
+<p>Ask the table three questions, and write the answers down.</p>
+<ol><li>Can a pair be captured? The variants listed above all keep a pair safe from a single piece, but house rules differ, so ask.</li><li>Can an opponent pass a pair? This is the real argument. Say yes (shelter) or no (wall), and say whether a six or a one breaks it.</li><li>Does a third piece change it? Some variants let a lone piece cut a stack of three.</li></ol>
+<p>Playing Ludo with friends at a real board, those answers keep the game friendly. Playing Ludo online, there is nothing to settle. The variant details above come from a Wikipedia summary, so check your own board's rules before you settle a bet on them.</p>
+<p><em>Ahmed Moaz makes Boardit. AI helped draft and review this piece; every claim about the game was checked against its code.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
