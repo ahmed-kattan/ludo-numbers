@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three sixes in a row: the odds that a turn is lost</title>
+<meta name="description" content="A turn is lost to three sixes in a row about once in every 216 turns. That is one-sixth, three times over. Spread across a whole four-player game of Ludo, ">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/three-sixes-in-a-row-the-odds-that-a-turn-is-lost/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Three sixes in a row: the odds that a turn is lost</h1>
+<p><small>Ahmed Moaz &middot; 13 October 2026</small></p>
+<p>A turn is lost to three sixes in a row about once in every 216 turns. That is one-sixth, three times over. Spread across a whole four-player game of Ludo, it means each player loses roughly half a turn and the table loses about two. The rule is easy to remember and easy to resent, so here is the arithmetic behind it, and what it costs.</p>
+<h2>How likely is it to roll three sixes in a row in Ludo?</h2>
+<p>One in 216, or 0.46%, for any turn that starts fresh. Each throw is a six one time in six, throws do not remember each other, and so three in a row is 1/6 × 1/6 × 1/6. Under the standard Ludo rules that Wikipedia's Ludo article describes, the third six ends the turn without a move, so you lose the turn.</p>
+<h2>The arithmetic, step by step</h2>
+<p>A turn can run on only while you keep throwing sixes. The chance of reaching each stage is:</p>
+<ul><li>One six: 1/6, which is 16.7%.</li><li>Two sixes in a row: 1/36, which is 2.8%.</li><li>Three in a row: 1/216, which is 0.46%.</li></ul>
+<p>Two things keep that exact figure honest. A capture, or a piece reaching the centre, also hands you a free throw, so a streak can start partway through a turn, which pushes the true rate up a little. And a six with no legal move ends the turn at once, which pulls it down. For round numbers, 1 in 216 is close enough.</p>
+<p>The dice also have no memory. Having thrown two sixes, the chance that your next throw is a third is still 1/6. In the other five cases in six, you get to use the throw normally.</p>
+<h2>From one turn to a whole game</h2>
+<p>How often does this happen over a real game of Ludo online or at a kitchen table? The engine counts a round as one trip of the turn round the table. The simulation file holds 30,024 Ludo games played by computer on 29 Sep 2026. The middle game ran 70 rounds at two seats, 95 at three and 120 at four. The engine plays a game on until only one player is left, so these are whole games. Treating each round as one turn per player, the lost turns work out like this:</p>
+<table><thead><tr><th>Seats</th><th>Median rounds</th><th>Lost turns per player</th><th>Lost turns per table</th><th>Chance a player loses at least one</th></tr></thead><tbody><tr><td>2</td><td>70</td><td>0.32</td><td>0.65</td><td>27.7%</td></tr><tr><td>3</td><td>95</td><td>0.44</td><td>1.32</td><td>35.7%</td></tr><tr><td>4</td><td>120</td><td>0.56</td><td>2.22</td><td>42.7%</td></tr></tbody></table>
+<p>A worked line: at four seats, 120 turns at 1/216 is 120 ÷ 216 = 0.56 lost turns per player. The chance of never losing one is (215/216)^120, which is 0.573, so 42.7% do lose at least one.</p>
+<p>For the whole table the same sum runs over every turn: 4 × 120 = 480 turns, and (215/216)^480 is 0.108. So about 89% of four-seat games see a lost turn somewhere, while a two-seat game (140 turns in all) comes out clean 52% of the time, close to a coin flip.</p>
+<p>On <a href="https://playboardit.com/play/ludo">Boardit's Ludo</a> the third six is checked before the move, so that throw is simply wasted and nothing already played is undone.</p>
+<h2>What a lost turn costs</h2>
+<p>The first two sixes still count. Their moves stand, and so does anything they captured. Only the third throw is thrown away, and with it the six squares it would have moved, or the piece it would have released.</p>
+<p>Put a number on it. Each piece travels 56 steps from its start square to the centre, so four pieces need 224 steps. Counting a lost third six as 6 steps is generous, since it might only have released a piece, and it leaves out the free throw that would have followed. At four seats, 0.56 lost turns × 6 steps is about 3.3 steps per player per game, which is roughly 1.5% of the whole journey. Annoying in the moment, small over the game.</p>
+<p>So the next time a night of Ludo with friends reaches two sixes in a row and everyone groans, the maths is calm. Five times in six, nothing is lost.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
