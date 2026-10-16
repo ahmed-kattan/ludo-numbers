@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do you throw again after a capture? Settling the bonus-turn argument</title>
+<meta name="description" content="Do you roll again after a capture in Ludo? On some tables yes, on others no, and that is why the argument never ends. A six earning another throw belongs t">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/do-you-throw-again-after-a-capture-settling-the-bonus-turn-argument/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>Do you throw again after a capture? Settling the bonus-turn argument</h1>
+<p><small>Ahmed Moaz &middot; 16 October 2026</small></p>
+<p>Do you roll again after a capture in Ludo? On some tables yes, on others no, and that is why the argument never ends. A six earning another throw belongs to the standard ludo rules. A capture or a piece arriving in the centre earning one is a house rule that some families treat as law and others have never heard of. Decide it first. Nobody argues fairly about a rule an hour after it has just cost them a piece.</p>
+<h2>Which bonus turns cause the fight?</h2>
+<p>There are three triggers, and only the first is common ground. Wikipedia's article on Ludo describes a bonus roll for a six in its base rules, and lists extra turns for a capture or a piece brought home as optional ways to speed the game up.</p>
+<table><thead><tr><th>Trigger</th><th>Standard?</th><th>In the game I build</th></tr></thead><tbody><tr><td>A six</td><td>Yes</td><td>Another throw</td></tr><tr><td>A capture</td><td>A variant</td><td>Another throw</td></tr><tr><td>A piece brought home</td><td>A variant</td><td>Another throw</td></tr></tbody></table>
+<p>The table shows why two people can both be sure they know the rules of Ludo and still disagree. They learned different tables.</p>
+<h2>What do the bonus turns add up to?</h2>
+<p>Take the six alone. You throw once. One time in six you throw again, and one time in 36 you throw a third time. A third six in a row loses the turn, but it still has to be thrown. So the average is at most 1 + 1/6 + 1/36 = 1.2037 throws a turn (a six with nothing to move ends the turn early), about 20 per cent more play than a game with no bonus at all. Three sixes in a row happens once in 216 turns, 0.46 per cent.</p>
+<p>Now the capture. In 10,008 computer-played two-player games, the mean game ran 71.59 rounds with 4.42 captures. Two players over 71.59 rounds is about 143 turns, so a capture bonus adds under 4.42 throws in 143, roughly 3 per cent. At four players the same files give 30.05 captures in about 487 turns, roughly 6 per cent.</p>
+<p>These are computer test players on the live engine, not people, and the turn counts ignore the bonus throws themselves. Read them as sizes, not predictions. The six bonus carries the game's tempo. The capture bonus is a garnish, a little bigger at a full table.</p>
+<h2>Do you roll again after a capture on Boardit?</h2>
+<p>Yes. On Boardit a six, a capture and a piece brought home each earn one more throw, and a throw that does two of those at once still earns just one. A run of three sixes loses the turn. A capture needs a lone piece that is not on a starred square. A pair of one colour cannot be taken.</p>
+<h2>Four edge cases that start the shouting</h2>
+<ul><li>A six with nothing that can move ends the turn. Otherwise a stuck player would get unlimited throws.</li><li>A six that also captures gives one extra throw, not two.</li><li>Landing on a protected pair or a starred square takes nothing, so there is no bonus either.</li><li>The sixes count restarts on any other number. Two sixes, then a 3 that captures, then another six counts as the first six of a new run.</li></ul>
+<p>A player who has just got their last piece home gets no bonus, because there is nothing left to move.</p>
+<p>Here is a worked turn that uses most of them. Red throws a 6 and brings a piece out: that is the first six, so Red throws again. A 4 lands on a lone Green piece and captures it, which earns another throw, and the six count goes back to zero. A 6 follows, the first of a new run. A second 6 is the second. A third 6 forfeits the turn at once, before any move, so five throws produced four moves and a lost turn.</p>
+<h2>Settle it in four questions</h2>
+<p>Ask these out loud before anyone throws, and write the answers on a scrap of paper:</p>
+<ol><li>Does a six give another throw?</li><li>Does a capture?</li><li>Does bringing a piece home?</li><li>How many sixes in a row lose the turn?</li></ol>
+<p>Playing ludo with friends is smoother when the answers are on the table first, and the same goes for Ludo online. The fixed-rules table is at <a href="https://playboardit.com/play/ludo">playboardit.com/play/ludo</a>, free in a browser. For a two-player ludo board, the first three answers matter least: captures are rare there, so the real fight is over the six.</p>
+<p><em>Ahmed Moaz makes Boardit, a free browser game site.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
