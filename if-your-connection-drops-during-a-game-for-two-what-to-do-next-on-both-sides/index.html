@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>If your connection drops during a game for two: what to do next, on both sides</title>
+<meta name="description" content="When a connection drops during a game with six people, the table thins and carries on. When it drops during a game for two, the game stops, because there i">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/if-your-connection-drops-during-a-game-for-two-what-to-do-next-on-both-sides/">
+<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<main>
+<article>
+<h1>If your connection drops during a game for two: what to do next, on both sides</h1>
+<p><small>Ahmed Moaz &middot; 17 October 2026</small></p>
+<p>When a connection drops during a game with six people, the table thins and carries on. When it drops during a game for two, the game stops, because there is nobody else to keep playing. What each of you does in the next minute decides whether the game survives. I build a site of free online games that run in the browser, so I see drops from the design side. This is what I would do on each side of one.</p>
+<h2>Why phones drop out of a browser game</h2>
+<p>Not every drop is the router's fault. A phone that locks, or a player who flicks to another app, can take the game with it. MDN's guide to the Page Visibility API says a page counts as hidden when its tab is in the background, its window is minimised, or "the device's screen is off". The same guide notes that browsers throttle timers in background tabs to improve performance.</p>
+<p>Chrome's documentation on the Page Lifecycle API, by Philip Walton, goes further. In a frozen page, "JavaScript timers and fetch callbacks don't run". A page can also be discarded, unloaded "in order to conserve resources", and then no script runs at all.</p>
+<p>So the cheapest fix comes first: keep the game in front, and stop the phone screen from locking mid-game. On a laptop, put the call and the game side by side rather than in tabs.</p>
+<h2>If you are the one who dropped</h2>
+<p>Go back to the same game page; do not open a fresh one. On Boardit, if you wander off while you still hold a seat in a game that is under way, every other page offers to take you back to the table or to leave the game. If the old page seems stuck, reload it rather than waiting.</p>
+<p>Then say so. A two-word message on the call or in a chat, "back soon", saves your partner from guessing. If your internet keeps dropping, switch from wifi to mobile data, or the other way, before you try to reconnect to the game a third time.</p>
+<h2>If you are the one still at the table</h2>
+<p>You have two choices: wait, or end it. Removing the other player is not a real third option. With two at the table, any vote to remove someone would be one person deciding for both, which is exactly the quarrel a drop rule exists to prevent.</p>
+<p>If the game has a turn clock, it may keep moving while your partner is away, so do not be surprised to find their turn played when they rejoin a game in progress. Set a limit before you start worrying. Two minutes is long enough for a reload and short enough not to sour the evening.</p>
+<h2>Agree what happens when a connection drops during a game</h2>
+<p>The right moment to decide what a drop means is before anyone drops. Three questions cover it:</p>
+<ol><li>How long do we wait? Pick a number, such as two minutes, and say it out loud.</li><li>Do we resume or restart? Restarting a game you were 30 minutes into costs those 30 minutes; a two-minute wait costs two.</li><li>Does an interrupted game count? Agree now, while nobody is losing.</li></ol>
+<p>These game night rules matter most for long-distance relationship games, where the call is the whole evening and a quarrel about a lost turn travels badly. Short games are cheaper to restart, which makes them good online games for couples on a shaky connection. If you are choosing what to play, <a href="https://playboardit.com/">Boardit</a> has five games that work with two players.</p>
+<h2>A drop is a rules question, not only a tech one</h2>
+<p>I have no data on how often drops happen, or why. Browser behaviour also differs between phones and browsers, and it changes over time, so treat the technical part as a guide rather than a guarantee. Nothing here replaces a stable connection. What a rule does is stop two-player online games turning into arguments about whose fault the drop was.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
