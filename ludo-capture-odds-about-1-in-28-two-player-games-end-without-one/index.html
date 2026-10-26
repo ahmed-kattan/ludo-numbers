@@ -6,14 +6,16 @@
 <title>Ludo capture odds: about 1 in 28 two-player games end without one</title>
 <meta name="description" content="Yes, a Ludo game can finish with nobody ever sent home. Anyone who plays Ludo with friends knows the sting of it, so it is fair to ask how often it never h">
 <link rel="canonical" href="https://ludo-numbers.statichost.page/ludo-capture-odds-about-1-in-28-two-player-games-end-without-one/">
-<style>body{max-width:44rem;margin:2rem auto;padding:0 1rem;font:17px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;color:#222;background:#fff}a{color:#0b5cad}h1{font-size:1.75rem;line-height:1.25}h2{font-size:1.25rem;margin-top:2rem}table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid #ccc;padding:.3rem .5rem;text-align:left}header,footer{font-size:.9rem;color:#666}code{background:#f3f3f3;padding:0 .2rem}</style>
+<link rel="alternate" type="application/rss+xml" title="Ludo by the Numbers" href="https://ludo-numbers.statichost.page/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Ludo capture odds: about 1 in 28 two-player games end without one", "datePublished": "2026-10-10", "author": {"@type": "Person", "name": "Ahmed Moaz"}, "mainEntityOfPage": "https://ludo-numbers.statichost.page/ludo-capture-odds-about-1-in-28-two-player-games-end-without-one/", "isPartOf": {"@type": "Blog", "name": "Ludo by the Numbers", "url": "https://ludo-numbers.statichost.page/"}}</script>
+<style>table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid currentColor;padding:.3rem .5rem;text-align:left;opacity:.95}h1{line-height:1.25}h2{margin-top:2rem}img{max-width:100%}.more ul{padding-left:1.1rem}body{max-width:46rem;margin:1.5rem auto;padding:0 1rem;font:16px/1.6 'Helvetica Neue',Arial,sans-serif;color:#1c2430;background:#f4f7fb}a{color:#0f6e5c}h1{font-size:1.65rem;border-bottom:3px solid #0f6e5c;padding-bottom:.3rem}h2{font-size:1.15rem;text-transform:uppercase;letter-spacing:.04em}header,footer,.meta{font-size:.85rem;color:#556070}</style>
 </head>
 <body>
-<header><a href="/">Ludo by the Numbers</a> &middot; by Ahmed Moaz &middot; <a href="/about/">About</a></header>
+<header><a href="/">Ludo by the Numbers</a> <span style="float:right"><a href="/about/">About</a> &middot; <a href="/feed.xml">RSS</a></span></header>
 <main>
 <article>
 <h1>Ludo capture odds: about 1 in 28 two-player games end without one</h1>
-<p><small>Ahmed Moaz &middot; 10 October 2026</small></p>
+<p class="meta">Ahmed Moaz &middot; <time datetime="2026-10-10">10 October 2026</time></p>
 <p>Yes, a Ludo game can finish with nobody ever sent home. Anyone who plays Ludo with friends knows the sting of it, so it is fair to ask how often it never happens. In 10,008 simulated two-player games on the Ludo engine I build for Boardit, run on 29 September 2026, 353 ended without a single Ludo capture. That is 3.5%, or about one game in 28. With three players it happened in 2 games out of 10,008. With four, it never happened.</p>
 <p>The 1 in 28 is not the surprising part. The surprise is that the simplest model of random events predicts far fewer quiet games. The size of that gap says something about how captures arrive.</p>
 <h2>The count from 30,024 simulated games</h2>
@@ -37,8 +39,9 @@
 <p>So how many captures in Ludo should a pair expect? In this run, half the two-player games had four or fewer, and nine in ten had eight or fewer. That spread is the real lesson of the ludo probability here: the average hides a long tail at both ends.</p>
 <h2>Questions the run leaves open</h2>
 <p>This ludo simulation used computer players, not people, on one engine version. Most seats took every capture offered, so an empty game here means no capture ever came within reach of those seats. A human table that sometimes declines a capture should see quiet games at least as often, but I have not measured that. The run also does not record why a given game stayed quiet. The extra spread is measured; the explanation for it is a reasonable guess, not a finding.</p>
-<p><em>Ahmed Moaz builds Boardit, a free browser game site. Drafted and reviewed with AI help; facts checked against the game's code.</em></p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
 </article>
+<aside class="more"><h2>More on Ludo by the Numbers</h2><ul><li><a href="/blockades-in-ludo-allowed-forbidden-or-a-house-rule/">Blockades in Ludo: allowed, forbidden or a house rule?</a></li><li><a href="/ludo-and-pachisi-rules-compared-eight-differences/">Ludo and Pachisi rules compared: eight differences</a></li><li><a href="/three-sixes-in-a-row-the-odds-that-a-turn-is-lost/">Three sixes in a row: the odds that a turn is lost</a></li></ul></aside>
 </main>
 <footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
 </body>
