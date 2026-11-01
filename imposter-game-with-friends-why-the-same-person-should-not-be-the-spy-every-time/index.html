@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imposter game with friends: why the same person should not be the spy every time</title>
+<meta name="description" content="Picture a Saturday evening of an imposter game with friends. Five rounds in, you notice the same person has been the spy three times and another has never ">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/imposter-game-with-friends-why-the-same-person-should-not-be-the-spy-every-time/">
+<link rel="alternate" type="application/rss+xml" title="Ludo by the Numbers" href="https://ludo-numbers.statichost.page/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Imposter game with friends: why the same person should not be the spy every time", "datePublished": "2026-11-01", "author": {"@type": "Person", "name": "Ahmed Moaz"}, "mainEntityOfPage": "https://ludo-numbers.statichost.page/imposter-game-with-friends-why-the-same-person-should-not-be-the-spy-every-time/", "isPartOf": {"@type": "Blog", "name": "Ludo by the Numbers", "url": "https://ludo-numbers.statichost.page/"}}</script>
+<style>table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid currentColor;padding:.3rem .5rem;text-align:left;opacity:.95}h1{line-height:1.25}h2{margin-top:2rem}img{max-width:100%}.more ul{padding-left:1.1rem}body{max-width:46rem;margin:1.5rem auto;padding:0 1rem;font:16px/1.6 'Helvetica Neue',Arial,sans-serif;color:#1c2430;background:#f4f7fb}a{color:#0f6e5c}h1{font-size:1.65rem;border-bottom:3px solid #0f6e5c;padding-bottom:.3rem}h2{font-size:1.15rem;text-transform:uppercase;letter-spacing:.04em}header,footer,.meta{font-size:.85rem;color:#556070}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> <span style="float:right"><a href="/about/">About</a> &middot; <a href="/feed.xml">RSS</a></span></header>
+<main>
+<article>
+<h1>Imposter game with friends: why the same person should not be the spy every time</h1>
+<p class="meta">Ahmed Moaz &middot; <time datetime="2026-11-01">1 November 2026</time></p>
+<p>Picture a Saturday evening of an imposter game with friends. Five rounds in, you notice the same person has been the spy three times and another has never been. Nobody did anything wrong. A plain shuffle has no memory, and runs like that are normal. This is why Who's the Spy uses a fair spy draw, and what the draw does to the numbers.</p>
+<h2>What is wrong with picking the spy at random?</h2>
+<p>Nothing, until you play more than a few rounds. A random pick each round gives every player the same chance every time, so it also allows the same player twice in a row. That is the opposite of what a table wants. Being the spy is the hard seat, and it is also the exciting one. If it keeps landing on one person, the others lose their turn at the fun, and the unlucky one loses a round of ordinary play.</p>
+<h2>How does the fair draw work?</h2>
+<p>There are two rules.</p>
+<ul><li>A player who was the spy last round is not the spy again, unless there are not enough other players to fill the seats.</li><li>Each player's chance shrinks with every round they have already been the spy. Count how many more times a player has been the spy than the player who has had the fewest. Add one, square it, and divide one by the result. That is the player's weight.</li></ul>
+<p>It is still a draw. It is not a rota, because with a strict rota everyone could work out who the spy must be. Take four players. If Ana is the spy first, a rota would make Ben next, then Cleo, then Dev. By round three the table would know.</p>
+<p>In the weighted draw, someone who has not been the spy is simply likelier. Say Ben was the spy in round two. For round three, Ana has been the spy once, and Cleo and Dev never. Their weights are 0.25, 1 and 1, so Ana has about an 11% chance and Cleo and Dev about 44% each. Nothing is certain.</p>
+<p>The count that feeds the weights moves only when the verdict makes the roles public, so it cannot give the spy away before the first clue.</p>
+<h2>What does it change in the numbers?</h2>
+<p>I wrote the weights into a small simulation and compared them with a plain random pick, 200,000 matches per row, one spy a round. In my simulation of the rules:</p>
+<table><thead><tr><th>Table and length</th><th>Plain random pick</th><th>Fair draw</th></tr></thead><tbody><tr><td>3 players, 3 rounds: one person is the spy every round</td><td>11.2%</td><td>0%</td></tr><tr><td>3 players, 3 rounds: somebody is never the spy</td><td>77.7%</td><td>20.1%</td></tr><tr><td>4 players, 4 rounds: the same player is the spy two rounds running</td><td>57.7%</td><td>0%</td></tr><tr><td>4 players, 4 rounds: a given player is never the spy</td><td>31.6%</td><td>10.6%</td></tr><tr><td>6 players, 6 rounds: the same player is the spy two rounds running</td><td>59.8%</td><td>0%</td></tr><tr><td>6 players, 6 rounds: most times one player was the spy (average)</td><td>2.41</td><td>1.72</td></tr><tr><td>8 players, 8 rounds: a given player is never the spy</td><td>34.5%</td><td>15.4%</td></tr></tbody></table>
+<p>With a plain pick, a back-to-back spy turns up in about six matches out of ten once a table plays as many rounds as it has players. The fair draw removes that entirely and brings the load closer together.</p>
+<p>The 11.2% figure is easy to check by hand. Three players, three rounds, one spy: three players can each take all three rounds with a chance of 1 in 27, and 3 x 1/27 is 1/9, about 11.1%.</p>
+<h2>What happens at the smallest table?</h2>
+<p>Three players leave the draw very little room, and it is a good place to see the rule at work. Say Ana is the spy in round one. For round two she is out of the draw, so Ben and Cleo each have a 50% chance. Suppose it is Ben.</p>
+<p>Round three excludes Ben. Ana has been the spy once and Cleo never, so their weights are 0.25 and 1. Cleo is the spy with probability 1 / 1.25, which is 80%, and Ana with 20%. In a plain shuffle the same round would be a one-in-three pick, Ben included. That is the whole difference: the draw leans towards whoever has waited longest, and it never repeats the last spy.</p>
+<h2>Why not make it perfectly even?</h2>
+<p>Perfect evenness would need a rota, and a rota gives the game away. The fair draw gets most of the benefit and keeps a little uncertainty. In the table, a given player still goes a whole six-round match without being the spy about 14% of the time. That is not a flaw. It is the price of keeping the draw a surprise.</p>
+<h2>What should the host do about it?</h2>
+<p>Match the rounds to the table. With one spy, a match with as many rounds as players lets most people take a turn: in my eight-player, eight-round run, about 85% of players were the spy at least once, against about 65% with a plain pick. The host can set from one to ten rounds. At eight players, ten rounds is a long evening, so plan it with the clocks in mind.</p>
+<h2>Where can you see it?</h2>
+<p><a href="https://playboardit.com/play/whos-the-spy">Boardit's Who's the Spy</a> uses the fair draw in every match. You can run it as a free spy game online with a group of three to eight, and watch who gets the spy card from round to round.</p>
+<h2>Playing a long match</h2>
+<p>A longer match gives the draw more room to even things out. A match of two rounds leaves most of it to luck. The fair draw only stops the worst runs.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+<aside class="more"><h2>More on Ludo by the Numbers</h2><ul><li><a href="/spy-game-online-as-the-spy-the-order-of-the-table-is-your-biggest-clue/">Spy game online as the spy: the order of the table is your biggest clue</a></li><li><a href="/trivia-night-questions-for-a-voice-call-ten-you-can-read-aloud-with-no-pictures/">Trivia night questions for a voice call: ten you can read aloud with no pictures</a></li><li><a href="/imposter-game-on-one-phone-how-the-host-decides-when-it-is-time-to-vote/">Imposter game on one phone: how the host decides when it is time to vote</a></li></ul></aside>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
