@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snakes and Ladders for eight: fewer rounds, more throws</title>
+<meta name="description" content="A bigger table plays fewer rounds but throws far more dice. I used the simulation of the classic board to count both, because the two numbers answer differ">
+<link rel="canonical" href="https://ludo-numbers.statichost.page/snakes-and-ladders-for-eight-fewer-rounds-more-throws/">
+<link rel="alternate" type="application/rss+xml" title="Ludo by the Numbers" href="https://ludo-numbers.statichost.page/feed.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Snakes and Ladders for eight: fewer rounds, more throws", "datePublished": "2026-11-07", "author": {"@type": "Person", "name": "Ahmed Moaz"}, "mainEntityOfPage": "https://ludo-numbers.statichost.page/snakes-and-ladders-for-eight-fewer-rounds-more-throws/", "isPartOf": {"@type": "Blog", "name": "Ludo by the Numbers", "url": "https://ludo-numbers.statichost.page/"}}</script>
+<style>table{border-collapse:collapse;margin:1rem 0}td,th{border:1px solid currentColor;padding:.3rem .5rem;text-align:left;opacity:.95}h1{line-height:1.25}h2{margin-top:2rem}img{max-width:100%}.more ul{padding-left:1.1rem}body{max-width:46rem;margin:1.5rem auto;padding:0 1rem;font:16px/1.6 'Helvetica Neue',Arial,sans-serif;color:#1c2430;background:#f4f7fb}a{color:#0f6e5c}h1{font-size:1.65rem;border-bottom:3px solid #0f6e5c;padding-bottom:.3rem}h2{font-size:1.15rem;text-transform:uppercase;letter-spacing:.04em}header,footer,.meta{font-size:.85rem;color:#556070}</style>
+</head>
+<body>
+<header><a href="/">Ludo by the Numbers</a> <span style="float:right"><a href="/about/">About</a> &middot; <a href="/feed.xml">RSS</a></span></header>
+<main>
+<article>
+<h1>Snakes and Ladders for eight: fewer rounds, more throws</h1>
+<p class="meta">Ahmed Moaz &middot; <time datetime="2026-11-07">7 November 2026</time></p>
+<p>A bigger table plays fewer rounds but throws far more dice. I used the simulation of the classic board to count both, because the two numbers answer different questions.</p>
+<h2>Rounds until someone wins</h2>
+<table><thead><tr><th>Players</th><th>Rounds before somebody finishes</th><th>Throws at the table</th></tr></thead><tbody><tr><td>2</td><td>26.3</td><td>about 53</td></tr><tr><td>3</td><td>21.7</td><td>about 65</td></tr><tr><td>4</td><td>19.3</td><td>about 77</td></tr><tr><td>6</td><td>16.6</td><td>about 100</td></tr><tr><td>8</td><td>15.1</td><td>about 121</td></tr></tbody></table>
+<p>The third column is the number of rounds times the number of players, so it is an estimate of how many turns the group takes before the game ends.</p>
+<h2>Reading it</h2>
+<p>The more counters on the board, the likelier it is that one of them gets a lucky run. So the game ends sooner in rounds. But each round now has eight turns instead of two, so the total number of throws grows.</p>
+<p>For a person waiting for their turn, that is the thing to notice. At a table of two you wait for one other throw. At a table of eight you wait for seven.</p>
+<h2>What that means for the clock</h2>
+<p>In Boardit, each turn has a 30-second limit, and a host can pick a relaxed clock that adds 30 seconds once a turn. The limit matters most if someone steps away.</p>
+<p>The table log counted 170 finished Snakes and Ladders games between 13 September and 30 October 2026, with a median of 4.3 minutes. That is faster than the simulation might suggest, because most of those tables were small: 2.5 real people on average.</p>
+<h2>Why waiting feels long</h2>
+<p>At a table of eight there are seven throws between yours. If every player used the whole 30 seconds, one lap would take four minutes. In practice a throw is quick, but a player who is looking at another tab can stall the table. That is what the 30-second clock and the relaxed-clock option are for, and a bot plays a seat that has gone quiet.</p>
+<h2>Where the numbers come from</h2>
+<p>The rounds come from the simulation I ran on 17 October 2026 against the board in the game's code. The throws are rounds times players, which is an approximation, because the winner does not need to take the last turn of a round. It is good enough to show the shape.</p>
+<h2>Waiting on 98 and 99</h2>
+<p>Fewer rounds do not mean fewer throws at the end. On the Ladder Garden board a lone counter lands on square 98 2.36 times per game on average, which shows how the finish stretches even a quick board. Eight players wait their turns, and each of them has the same exact-throw wait on squares 94 to 99 one after another.</p>
+<h2>What I would take from it</h2>
+<p>For a big group, choose the match option, first to three, if you want an evening of it. For a quick game, keep the table small.</p>
+<p>The numbers are simulation figures from 17 October 2026 for the classic board.</p>
+<p><em>Ahmed Moaz builds Boardit, a free browser game site.</em></p>
+</article>
+<aside class="more"><h2>More on Ludo by the Numbers</h2><ul><li><a href="/family-game-night-online-a-six-week-rotation-one-game-a-week-with-one-rule-chang/">Family game night online: a six-week rotation, one game a week, with one rule changed each time</a></li><li><a href="/ludo-house-rules-for-young-players-turning-captures-off-and-when-to-turn-them-ba/">Ludo house rules for young players: turning captures off, and when to turn them back on</a></li><li><a href="/board-games-for-kids-online-the-step-from-snakes-and-ladders-to-ludo/">Board games for kids online: the step from Snakes and Ladders to Ludo</a></li></ul></aside>
+</main>
+<footer><p>Written by Ahmed Moaz. Figures labelled as simulated come from computer play, not from people.</p></footer>
+</body>
+</html>
